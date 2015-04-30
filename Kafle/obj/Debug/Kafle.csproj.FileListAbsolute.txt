@@ -1,0 +1,6 @@
+E:\PROGRAMY\Kafle\Kafle\bin\Kafle.dll.config
+E:\PROGRAMY\Kafle\Kafle\bin\Kafle.dll
+E:\PROGRAMY\Kafle\Kafle\bin\Kafle.pdb
+E:\PROGRAMY\Kafle\Kafle\obj\Debug\Kafle.csprojResolveAssemblyReference.cache
+E:\PROGRAMY\Kafle\Kafle\obj\Debug\Kafle.dll
+E:\PROGRAMY\Kafle\Kafle\obj\Debug\Kafle.pdb
