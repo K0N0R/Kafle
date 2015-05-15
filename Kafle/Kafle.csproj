@@ -18,15 +18,8 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="button.png" />
-    <Content Include="jquery-commands - Copy.js" />
+    <Content Include="fotorama.css" />
     <Content Include="jquery-commands.js" />
-    <Content Include="jquery_libs\effects.core.js" />
-    <Content Include="jquery_libs\jquery-ui.css" />
-    <Content Include="jquery_libs\jquery-ui.js" />
-    <Content Include="jquery_libs\jquery-ui.min.js" />
-    <Content Include="jquery_libs\jquery.js" />
-    <Content Include="klucz.cur" />
     <Content Include="stylesheet.css" />
     <Content Include="index.html" />
     <Content Include="web.config" />
@@ -70,7 +63,7 @@
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
-    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>

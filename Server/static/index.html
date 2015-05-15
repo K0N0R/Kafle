@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+
+    <title>auto-elektra</title>
+
+
+    <!-- ************     FONTS     **************  -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- ************     GOOGLE MAPS     **************  -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- ************     JQUERY/UI     **************  -->
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css" type="text/css" />
+
+    <!-- ************     FOTORAMA     **************  -->
+    <link rel="stylesheet" href="fotorama.css" type="text/css" />
+    <script src="fotorama.js"></script>
+
+    <!-- ************     CSS/JAVASCRIPT     **************  -->
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script src="jquery-commands.js"></script>
+
+</head>
+<body>
+
+    <div id="bcgr" class="bcgr">
+        <p>Created by Maciej Drzewicki <br /> All rights reserved ©</p>
+
+    </div>
+
+    <div id="first" class="buttons active">
+
+        <div id="first_link" class="hide_link">
+            <h1>STRONA GŁÓWNA</h1>
+            <p>Kliknij aby powiększyć</p>
+        </div>
+        <div id="first_content" class="view_content">
+            <h1>
+                <font color="blue">AUTO-ELEKTRA<br /></font>
+                <font color="red">SKLEP MOTORYZACYJNY<br /></font>
+                <font color="blue">SERWIS<br /></font>
+            </h1>
+            <div class="line"></div>
+            <p>
+                Zajmujemy się kompleksową naprawą samochodów osobowych.
+                Jesteśmy na rynku od ponad dwudziestu lat!
+                Dbamy o to aby naprawy wykonywane były fachowo i z należytą starannością!
+                Świadczymy usługi zarówno dla osób indywidualnych jak i firm!
+                Współpracujemy z wieloma warsztatami mechanicznymi!
+            </p>
+        </div>
+        <img src="home.JPG" />
+    </div>
+    <div id="second" class="buttons bottom_first">
+
+        <div id="second_link" class="view_link">
+            <h1>KONTAKT</h1>
+            <p>Kliknij aby powiększyć</p>
+        </div>
+        <div id="second_content" class="hide_content">
+            <h1>
+                Kontakt
+            </h1>
+            <p>
+                Adress: <b>Mszczonów 96-320,</b>
+                <b>ul.Opłotki 5</b><br />
+                tel. warsztat: <b>46 857 10 20,</b><b>507 11 34 11</b><br />
+                tel. sklep: <b>46 857 26 50</b><br />
+                Czynne: <b>pn-pt, 8:00-17:00</b>
+            </p>
+        </div>
+        <img src="kontakt.JPG" />
+    </div>
+
+    <div id="third" class="buttons bottom_second">
+
+        <div id="third_link" class="view_link">
+
+            <h1>MAPA</h1>
+            <p>Kliknij aby powiększyć</p>
+
+        </div>
+        <div id="third_content" class="hide_content">
+            <div id="map_canvas"></div>
+        </div>
+        <img src="map.png" />
+    </div>
+
+    <div id="fourth" class="buttons bottom_third">
+        <div id="fourth_link" class="view_link">
+
+            <h1>GALERIA</h1>
+            <p>Kliknij aby powiększyć</p>
+        </div>
+        <div id="fourth_content" class="hide_content">
+            <div id="fotorama" class="fotorama"
+                 data-auto="false"
+                 data-allowfullscreen="true"
+                 data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'
+                 data-navposition="top"
+                 data-nav="thumbs"
+                 data-fit="contain"
+                 data-autoplay="3000">
+            </div>
+        </div>
+        <img src="galleria.JPG" />
+    </div>
+
+    <div id="fifth" class="buttons bottom_fourth">
+        <div id="fifth_link" class="view_link">
+
+            <h1>OFERTA</h1>
+            <p>Kliknij aby powiększyć</p>
+        </div>
+        <div id="fifth_content" class="hide_content">
+            <h1>OFERTA</h1>
+            <div>
+                <h3>
+                    Naszą specjalizacją jes naprawa alternatorów i rozruszników w pełnym zakresie:
+                </h3>
+                <ul>
+                    <li>12V jak i 24V</li>
+                    <li>krajowych oraz zachodnich</li>
+                    <li>japońskich i amerykańskich</li>
+                </ul>
+                <p>
+                    W tym zakresie dysponujemy na warsztacie zarówno stołami probierczymi
+                    jak i testerami do diagnozy alternatorów i rozruszników nowych typów.
+                    Na sklepie posiadamy w bardzo szerokim zakresie częsci i podzespoły do ich naprawy.
+                </p>
+                <h3>
+                    Warszat wykonuje naprawy w zakresie:
+                </h3>
+                <ul>
+                    <li>alternator</li>
+                    <li>rozrusznik</li>
+                    <li>diagnostyka komputerowa</li>
+                    <li>elektromechanika</li>
+                    <li>klimatyzacja: przegląd i naprawa</li>
+                    <li>wymiany rozrządów</li>
+                    <li>naprawy bierzące</li>
+                    <li>wymiana: oleju i filtrów</li>
+                    <li>elektronika</li>
+                    <li>diagnostyka silnika</li>
+                </ul>
+                <h3>
+                    Na sklepie posiadamy części:
+                </h3>
+                <ul>
+                    <li>do alternatora</li>
+                    <li>do rozrusznika</li>
+                    <li>przekaźniki</li>
+                    <li>kostki i piny elektryczne</li>
+                    <li>świece</li>
+                    <li>filtry kabinowe</li>
+                </ul>
+                <h3>
+                    Na indywidualne zamówienie wszystkie inne części z zakresu elektromechaniki i mechaniki:
+                </h3>
+                <ul>
+                    <li>oleje</li>
+                    <li>klocki</li>
+                    <li>tarcze</li>
+                    <li>szczęki</li>
+                    <li>cylinderki</li>
+                    <li>czujniki</li>
+                    <li>silniki krokowe</li>
+                </ul>
+            </div>
+        </div>
+        <img src="oferta.JPG" />
+    </div>
+
+    <div id="marker_content">
+        <h3>Auto-Elektra</h3>
+        <p>
+            Adress: <b>Mszczonów 96-320, ul.Opłotki 5</b><br />
+            tel. warsztat: <b>46 857 10 20,</b><b>   507 11 34 11</b><br />
+            tel. sklep: <b>46 857 26 50</b><br />
+            Czynne: <b>pn-pt,   8:00-17:00</b>
+        </p>
+    </div>
+</body>
+</html>
