@@ -1,17 +1,17 @@
 ﻿$(document).ready(function () {
 
-    AdjustingElements(1000);
+    AdjustingElements(1000, 'css');
     $(window).resize(function () {
-        AdjustingElements(50);
+        AdjustingElements(50, 'css');
     });
     ClickHandler();
 
 
 });
-function AdjustingElements(DurationTime) {
+function AdjustingElements(DurationTime, method) {
     var widthofelement = $(document).width() * 0.75 / 4;
 
-    $('.bcgr').animate({
+    $('.bcgr')[method]({
         top: 0,
         left: 0,
         height: $(document).height(),
@@ -19,15 +19,15 @@ function AdjustingElements(DurationTime) {
         fontSize: Math.sqrt($(document).height() * $(document).width()) * 0.015,
     }, DurationTime, 'easeInOutQuart');
 
-    $('.active').animate({
+    $('.active')[method]({
         top: $(document).height() * 0.05,
         left: $(document).width() * 0.05,
-        height: $(document).height() * 0.60,
+        height: $(document).height() * 0.6,
         width: $(document).width() * 0.9,
     }, DurationTime, 'easeInOutQuart');
 
     $('.view_content').css({
-        fontSize: Math.sqrt($(document).height() * $(document).width()) * 0.031,
+        fontSize: Math.sqrt($(document).height() * $(document).width()) * 0.028,
     });
 
     $('.view_link').css({
@@ -35,28 +35,47 @@ function AdjustingElements(DurationTime) {
         borderWidth: $(document).height() * 0.01,
     });
 
-    $('.bottom_first').animate({
+    $('.bottom_first')[method]({
         top: $(document).height() * 0.70,
         left: $(document).width() * 0.05,
         height: $(document).height() * 0.25,
         width: widthofelement,
     }, DurationTime, 'easeInOutQuart');
 
-    $('.bottom_second').animate({
+    $('.bottom_second')[method]({
         top: $(document).height() * 0.70,
         left: $(document).width() * 0.1 + widthofelement,
         height: $(document).height() * 0.25,
         width: widthofelement,
     }, DurationTime, 'easeInOutQuart');
 
-    $('.bottom_third').animate({
+    $('.bottom_third')[method]({
         top: $(document).height() * 0.70,
         left: $(document).width() * 0.15 + 2 * widthofelement,
         height: $(document).height() * 0.25,
         width: widthofelement,
     }, DurationTime, 'easeInOutQuart');
 
-    $('.bottom_fourth').animate({
+    if ($(document).height() * 0.6 > $(document).width() * 0.9) {
+        $('.fotorama')[method]({
+            width: $(document).width() * 0.9,
+            height: $(document).width() * 0.9,
+        })
+    }
+    else {
+        $('.fotorama')[method]({
+            width: Math.sqrt($(document).height() * $(document).width()) * 0.65,
+            height: $(document).height() * 0.6,
+        })
+    }
+    $('.fotorama').css({
+        "marginTop": "0",
+        "marginRight": "auto",
+        "marginBottom": "0",
+        "marginLeft": "auto"
+    })
+
+    $('.bottom_fourth')[method]({
         top: $(document).height() * 0.70,
         left: $(document).width() * 0.2 + 3 * widthofelement,
         height: $(document).height() * 0.25,
@@ -119,20 +138,20 @@ function ClickHandler() {
             $('#fourth').promise('fx', '#fourth').done(function () {
                 $('.fotorama').fotorama({
                     data: [
-                      { img: '1.JPG', thumb: '1.JPG' },
-                      { img: '2.JPG', thumb: '2.JPG' },
-                      { img: '3.JPG', thumb: '3.JPG'},
-                      { img: '4.JPG', thumb: '4.JPG' },
-                      { img: '5.JPG', thumb: '5.JPG' },
-                      { img: '6.JPG', thumb: '6.JPG' },
-                      { img: '7.JPG', thumb: '7.JPG' },
-                      { img: '8.JPG', thumb: '8.JPG' },
-                      { img: '9.JPG', thumb: '9.JPG' },
+                      { img: '/kafle/1.JPG', thumb: '/kafle/1.JPG' },
+                      { img: '/kafle/2.JPG', thumb: '/kafle/2.JPG' },
+                      { img: '/kafle/3.JPG', thumb: '/kafle/3.JPG' },
+                      { img: '/kafle/4.JPG', thumb: '/kafle/4.JPG' },
+                      { img: '/kafle/5.JPG', thumb: '/kafle/5.JPG' },
+                      { img: '/kafle/6.JPG', thumb: '/kafle/6.JPG' },
+                      { img: '/kafle/7.JPG', thumb: '/kafle/7.JPG' },
+                      { img: '/kafle/8.JPG', thumb: '/kafle/8.JPG' },
+                      { img: '/kafle/9.JPG', thumb: '/kafle/9.JPG' },
                     ]
                 });
             })
         }
-        AdjustingElements(500);
+        AdjustingElements(50, 'animate');
     })
 }
 
@@ -144,7 +163,7 @@ function ClickAnimation(ClickedClassName, GoalClassName, DurationTime) {
             $('.' + ClickedClassName).animate({
                 top: $(document).height() * 0.05,
                 left: $(document).width() * 0.05,
-                height: $(document).height() * 0.60,
+                height: $(document).height() * 0.6,
                 width: $(document).width() * 0.9,
 
             }, DurationTime, 'easeInOutQuart');
